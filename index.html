@@ -26,9 +26,6 @@
     @media (min-width: 640px) {
       .comparison-table th, .comparison-table td { padding: 14px 16px; }
     }
-    /* Scroll hint on mobile */
-    .table-scroll-hint { display: block; }
-    @media (min-width: 640px) { .table-scroll-hint { display: none; } }
   </style>
 
   <!-- Google Analytics 4 — replace G-XXXXXXXXXX with real ID after ads setup -->
@@ -296,7 +293,62 @@
       </p>
       <p class="text-xs text-gray-400 text-center mb-8">Pricing in USD. Approx. GBP equivalent shown — verify at each tool's website before purchasing. GBP conversion based on May 2026 rate (~£0.79/$1).</p>
 
-      <p class="table-scroll-hint text-xs text-gray-400 text-center mb-2">← Swipe to compare all tools →</p>
+      <!-- ══ MOBILE LAYOUT (hidden on md+) ══ -->
+      <div class="md:hidden space-y-4">
+
+        <!-- Zebracat highlight card -->
+        <div class="bg-blue-50 border-2 border-blue-400 rounded-xl p-5">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-2">
+              <img src="https://s3-us-west-2.amazonaws.com/public.notion-static.com/15b41480-847b-498b-85a7-eaafea57c127/Logo_2.svg" alt="Zebracat" class="h-7" onerror="this.outerHTML='🦓'">
+              <span class="font-bold text-blue-700 text-base">Zebracat</span>
+            </div>
+            <span class="bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded-full">⭐ 9.2/10</span>
+          </div>
+          <ul class="space-y-2 text-sm mb-5">
+            <li class="flex gap-2 items-start"><span class="text-green-600 font-bold flex-shrink-0">✅</span><span><strong>True Generative AI</strong> — unique output, no stock overlap</span></li>
+            <li class="flex gap-2 items-start"><span class="text-green-600 font-bold flex-shrink-0">✅</span><span><strong>Full agency commercial rights</strong> on all plans</span></li>
+            <li class="flex gap-2 items-start"><span class="text-green-600 font-bold flex-shrink-0">✅</span><span><strong>175+ language voiceovers</strong> incl. UK-native accents</span></li>
+            <li class="flex gap-2 items-start"><span class="text-green-600 font-bold flex-shrink-0">✅</span><span><strong>Brand kit</strong> included on entry plan</span></li>
+            <li class="flex gap-2 items-start"><span class="text-green-600 font-bold flex-shrink-0">✅</span><span><strong>All social formats</strong> (16:9, 9:16, 1:1) on all plans</span></li>
+            <li class="flex gap-2 items-start"><span class="text-green-600 font-bold flex-shrink-0">✅</span><span><strong>Live chat support</strong> — not just email</span></li>
+            <li class="flex gap-2 items-start"><span class="text-green-600 font-bold flex-shrink-0">✅</span><span><strong>From $19/mo (~£15)</strong> on annual plan · Free tier available</span></li>
+            <li class="flex gap-2 items-start"><span class="text-green-600 font-bold flex-shrink-0">✅</span><span>GDPR compliant</span></li>
+          </ul>
+          <a href="http://studio.zebracat.ai/signup/?via=aivideo-review"
+             target="_blank" rel="noopener sponsored"
+             onclick="trackClick('mobile-table-cta')"
+             class="block text-center bg-blue-600 text-white font-bold py-3 rounded-xl hover:bg-blue-700 transition text-sm">
+            Try Zebracat Free — Use Code REVIEW15 →
+          </a>
+        </div>
+
+        <!-- Competitors accordion -->
+        <details class="bg-white border border-gray-200 rounded-xl p-4 group">
+          <summary class="flex justify-between items-center cursor-pointer font-semibold text-gray-700 text-sm list-none">
+            <span>How do the other tools compare?</span>
+            <span class="text-gray-400 text-xs group-open:hidden">▼ Show</span>
+            <span class="text-gray-400 text-xs hidden group-open:inline">▲ Hide</span>
+          </summary>
+          <div class="mt-4 space-y-4 text-sm divide-y divide-gray-100">
+            <div class="pt-4 first:pt-0">
+              <p class="font-bold text-gray-800 mb-1">🎬 InVideo AI — 8.1/10 · From $20/mo</p>
+              <p class="text-gray-600 leading-relaxed">✅ 5,000+ templates, lowest price · ⚠️ Template-based, not generative · ⚠️ Brand kit on Pro+ only · ❌ Output looks similar across users</p>
+            </div>
+            <div class="pt-4">
+              <p class="font-bold text-gray-800 mb-1">📝 Pictory — 7.4/10 · From $25/mo</p>
+              <p class="text-gray-600 leading-relaxed">✅ Best for blog-to-video repurposing · ✅ ElevenLabs voices · ❌ No AI generation from scratch · ❌ Team plan costs $119/mo</p>
+            </div>
+            <div class="pt-4">
+              <p class="font-bold text-gray-800 mb-1">🎞️ Lumen5 — 6.5/10 · From $19/mo</p>
+              <p class="text-gray-600 leading-relaxed">✅ Easy for beginners · ❌ 5-min video cap on Basic · ❌ No brand kit at entry level · ❌ No team collaboration</p>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- ══ DESKTOP LAYOUT (hidden on mobile) ══ -->
+      <div class="hidden md:block">
       <div class="overflow-x-auto rounded-xl shadow-sm border border-gray-200">
         <table class="comparison-table text-sm border-collapse bg-white">
           <thead>
@@ -418,6 +470,7 @@
           Try Zebracat Free — Use Code REVIEW15 →
         </a>
       </div>
+      </div><!-- end desktop -->
     </div>
   </section>
   <!-- USE CASE ROUTING -->
