@@ -29,11 +29,20 @@
     }
   </style>
 
-  <!-- Google Analytics 4 — replace G-XXXXXXXXXX with real ID after ads setup -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R294586ZWT"></script>
+  <!-- Consent Mode v2 — must be before GA4 -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+  </script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R294586ZWT"></script>
+  <script>
     gtag('js', new Date());
     gtag('config', 'G-R294586ZWT');
   </script>
@@ -962,6 +971,37 @@
       </p>
     </div>
   </footer>
+  <!-- COOKIE CONSENT BANNER -->
+  <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#0c0c14;border-top:1px solid rgba(255,255,255,0.1);padding:16px 24px;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:16px;justify-content:space-between;">
+      <p style="color:rgba(255,255,255,0.7);font-size:13px;margin:0;flex:1;min-width:200px;">
+        We use cookies to analyse traffic and improve your experience. See our <a href="privacy.html" style="color:#7c6af7;text-decoration:underline;">Privacy Policy</a>.
+      </p>
+      <div style="display:flex;gap:10px;flex-shrink:0;">
+        <button onclick="declineCookies()" style="background:transparent;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.6);padding:8px 18px;border-radius:6px;font-size:13px;cursor:pointer;">Decline</button>
+        <button onclick="acceptCookies()" style="background:#7c6af7;border:none;color:#fff;padding:8px 18px;border-radius:6px;font-size:13px;cursor:pointer;font-weight:600;">Accept</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function() {
+      var consent = localStorage.getItem('cookieConsent');
+      if (consent === 'accepted') {
+        gtag('consent', 'update', { 'analytics_storage': 'granted', 'ad_storage': 'granted', 'ad_user_data': 'granted', 'ad_personalization': 'granted' });
+      } else if (!consent) {
+        document.getElementById('cookie-banner').style.display = 'block';
+      }
+    })();
+    function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      gtag('consent', 'update', { 'analytics_storage': 'granted', 'ad_storage': 'granted', 'ad_user_data': 'granted', 'ad_personalization': 'granted' });
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    function declineCookies() {
+      localStorage.setItem('cookieConsent', 'declined');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+  </script>
   <!-- CONVERSION TRACKING -->
   <!-- Replace AW-XXXXXXXXX/XXXXXXXXXXXX with real Google Ads tag after ads setup -->
   <script>
