@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 AI Video Script Templates for UK Marketers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #1a1a1a;
+      background: #fff;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    /* ── COVER PAGE ── */
+    .cover {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 60%, #16213e 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 40px;
+      page-break-after: always;
+    }
+
+    .cover-logo-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .cover-logo-row img {
+      height: 36px;
+      filter: brightness(0) invert(1);
+    }
+
+    .cover-divider {
+      width: 1px;
+      height: 36px;
+      background: rgba(255,255,255,0.3);
+    }
+
+    .cover-site {
+      color: rgba(255,255,255,0.7);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+    }
+
+    .cover-badge {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #a78bfa;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+
+    .cover h1 {
+      font-size: 42px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.15;
+      max-width: 620px;
+      margin-bottom: 20px;
+    }
+
+    .cover h1 span {
+      color: #a78bfa;
+    }
+
+    .cover-sub {
+      color: rgba(255,255,255,0.6);
+      font-size: 15px;
+      max-width: 480px;
+      margin-bottom: 48px;
+    }
+
+    .cover-features {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 48px;
+    }
+
+    .cover-feature {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.75);
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .cover-feature-dot {
+      width: 8px;
+      height: 8px;
+      background: #a78bfa;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .cover-footer {
+      margin-top: auto;
+      padding-top: 40px;
+      color: rgba(255,255,255,0.35);
+      font-size: 11px;
+    }
+
+    /* ── HOW TO USE PAGE ── */
+    .howto-page {
+      padding: 64px 72px;
+      page-break-after: always;
+      min-height: 100vh;
+    }
+
+    /* ── TEMPLATE PAGES ── */
+    .template-page {
+      padding: 56px 72px;
+      page-break-after: always;
+      min-height: 100vh;
+    }
+
+    /* ── SHARED COMPONENTS ── */
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #7c3aed;
+      margin-bottom: 8px;
+    }
+
+    .page-title {
+      font-size: 28px;
+      font-weight: 800;
+      color: #0f0f0f;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+
+    .page-subtitle {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 32px;
+    }
+
+    .rule {
+      border: none;
+      border-top: 2px solid #f3f4f6;
+      margin: 28px 0;
+    }
+
+    /* Template header */
+    .template-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .template-number {
+      width: 44px;
+      height: 44px;
+      background: #7c3aed;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .template-title-block { flex: 1; }
+
+    .template-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #0f0f0f;
+      margin-bottom: 4px;
+    }
+
+    .template-meta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .meta-pill {
+      background: #f3f4f6;
+      color: #374151;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    .meta-pill.purple { background: #ede9fe; color: #5b21b6; }
+    .meta-pill.green  { background: #dcfce7; color: #166534; }
+
+    /* Script framework */
+    .framework {
+      background: #fafafa;
+      border: 1.5px solid #e5e7eb;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+
+    .framework-header {
+      background: #f3f4f6;
+      padding: 10px 18px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #6b7280;
+    }
+
+    .framework-body { padding: 18px; }
+
+    .beat {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 14px;
+      align-items: flex-start;
+    }
+
+    .beat:last-child { margin-bottom: 0; }
+
+    .beat-label {
+      min-width: 90px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #7c3aed;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding-top: 2px;
+    }
+
+    .beat-content {
+      flex: 1;
+    }
+
+    .beat-template {
+      font-size: 12.5px;
+      color: #374151;
+      margin-bottom: 4px;
+      font-style: italic;
+    }
+
+    .beat-note {
+      font-size: 11px;
+      color: #9ca3af;
+    }
+
+    /* Example script */
+    .example {
+      background: #fff;
+      border: 1.5px solid #ddd6fe;
+      border-left: 4px solid #7c3aed;
+      border-radius: 0 10px 10px 0;
+      padding: 18px 20px;
+      margin-bottom: 24px;
+    }
+
+    .example-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #7c3aed;
+      margin-bottom: 12px;
+    }
+
+    .example-line {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 8px;
+      font-size: 12px;
+    }
+
+    .example-beat {
+      min-width: 80px;
+      font-weight: 600;
+      color: #6b7280;
+      font-size: 11px;
+      padding-top: 1px;
+    }
+
+    .example-text {
+      color: #1f2937;
+      line-height: 1.5;
+    }
+
+    /* Zebracat tip box */
+    .zc-tip {
+      background: linear-gradient(135deg, #faf5ff, #ede9fe);
+      border: 1.5px solid #c4b5fd;
+      border-radius: 10px;
+      padding: 14px 18px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .zc-tip-logo {
+      height: 20px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .zc-tip-text {
+      font-size: 12px;
+      color: #4c1d95;
+      line-height: 1.5;
+    }
+
+    .zc-tip-text strong {
+      font-weight: 700;
+    }
+
+    /* How-to page */
+    .howto-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 28px 0;
+    }
+
+    .howto-card {
+      background: #fafafa;
+      border: 1.5px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .howto-step {
+      font-size: 11px;
+      font-weight: 700;
+      color: #7c3aed;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 6px;
+    }
+
+    .howto-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0f0f0f;
+      margin-bottom: 8px;
+    }
+
+    .howto-desc {
+      font-size: 12.5px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+
+    /* Checklist */
+    .checklist { list-style: none; }
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 8px;
+      font-size: 13px;
+      color: #374151;
+    }
+
+    .checklist li::before {
+      content: "✓";
+      color: #7c3aed;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* Final CTA page */
+    .cta-page {
+      padding: 64px 72px;
+      min-height: 50vh;
+      background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .cta-page img { height: 32px; filter: brightness(0) invert(1); margin-bottom: 24px; }
+    .cta-page h2 { font-size: 28px; font-weight: 800; color: #fff; max-width: 480px; margin-bottom: 12px; line-height: 1.2; }
+    .cta-page p { color: rgba(255,255,255,0.6); font-size: 14px; max-width: 420px; margin-bottom: 28px; }
+
+    .cta-code {
+      background: rgba(167,139,250,0.15);
+      border: 1.5px dashed #a78bfa;
+      border-radius: 10px;
+      padding: 14px 32px;
+      margin-bottom: 28px;
+    }
+
+    .cta-code p { color: rgba(255,255,255,0.5); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px; }
+    .cta-code span { font-size: 28px; font-weight: 800; color: #a78bfa; letter-spacing: 0.05em; }
+
+    .cta-url {
+      color: #a78bfa;
+      font-size: 13px;
+      font-weight: 600;
+      word-break: break-all;
+    }
+
+    .cta-footer {
+      margin-top: 36px;
+      color: rgba(255,255,255,0.25);
+      font-size: 11px;
+    }
+
+    /* Print */
+    @media print {
+      body { font-size: 12px; }
+      .cover, .howto-page, .template-page { page-break-after: always; }
+      a { text-decoration: none; color: inherit; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════ COVER ══ -->
+<div class="cover">
+  <div class="cover-logo-row">
+    <img src="https://s3-us-west-2.amazonaws.com/public.notion-static.com/15b41480-847b-498b-85a7-eaafea57c127/Logo_2.svg" alt="Zebracat">
+    <div class="cover-divider"></div>
+    <span class="cover-site">AIVideoToolReview.com</span>
+  </div>
+
+  <div class="cover-badge">Free Resource — UK Edition</div>
+
+  <h1>5 AI Video Script Templates for <span>UK Marketers</span></h1>
+
+  <p class="cover-sub">
+    Ready-to-use frameworks for professionals, freelancers &amp; agencies.
+    Paste into Zebracat and generate a scroll-stopping video in minutes.
+  </p>
+
+  <div class="cover-features">
+    <div class="cover-feature"><div class="cover-feature-dot"></div> 5 proven script structures</div>
+    <div class="cover-feature"><div class="cover-feature-dot"></div> Optimised for UK audiences</div>
+    <div class="cover-feature"><div class="cover-feature-dot"></div> Works with Zebracat AI</div>
+    <div class="cover-feature"><div class="cover-feature-dot"></div> No editing skills needed</div>
+  </div>
+
+  <p class="cover-footer">© 2026 AIVideoToolReview.com · Independent resource · Not affiliated with Zebracat</p>
+</div>
+
+<!-- ══════════════════════════════════════════ HOW TO USE ══ -->
+<div class="howto-page">
+  <div class="section-label">Before You Start</div>
+  <h2 class="page-title">How to Use These Templates</h2>
+  <p class="page-subtitle">Each template is a fill-in-the-blank script structure tested for UK professional audiences.</p>
+  <hr class="rule">
+
+  <div class="howto-grid">
+    <div class="howto-card">
+      <div class="howto-step">Step 1</div>
+      <div class="howto-title">Pick your template</div>
+      <div class="howto-desc">Choose the script that matches your goal — social ad, case study, lead gen, LinkedIn, or tutorial. Each template is independent and ready to use on its own.</div>
+    </div>
+    <div class="howto-card">
+      <div class="howto-step">Step 2</div>
+      <div class="howto-title">Fill in the brackets</div>
+      <div class="howto-desc">Replace every <strong>[PLACEHOLDER]</strong> with your specific details: your product name, pain point, result, or audience. The more specific you are, the better the output.</div>
+    </div>
+    <div class="howto-card">
+      <div class="howto-step">Step 3</div>
+      <div class="howto-title">Paste into Zebracat</div>
+      <div class="howto-desc">Open Zebracat, select "Text to Video", paste your completed script, and choose a style. The AI generates unique visuals — no stock footage, no templates that look like everyone else's.</div>
+    </div>
+    <div class="howto-card">
+      <div class="howto-step">Step 4</div>
+      <div class="howto-title">Select UK-native voice</div>
+      <div class="howto-desc">In Zebracat's voiceover settings, choose a British accent. UK audiences respond far better to native accents — this alone significantly improves retention and ad performance.</div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <p style="font-size:13px;font-weight:700;color:#0f0f0f;margin-bottom:12px;">What makes these templates work</p>
+  <ul class="checklist">
+    <li>Each template opens with a <strong>pattern interrupt</strong> — the first 3 seconds determine whether the viewer keeps watching</li>
+    <li>The <strong>problem is stated before the solution</strong> — audiences engage more when they feel understood, not sold to</li>
+    <li>All CTAs are <strong>low-friction</strong> — "start free" or "see how it works" outperforms "buy now" for professional audiences</li>
+    <li>Copy is written in <strong>British English</strong> — "video editor" not "videographer", "£" not "$", "agency" not "shop"</li>
+    <li>Every template is <strong>platform-agnostic</strong> — works on LinkedIn, YouTube Shorts, Instagram Reels, and TikTok</li>
+  </ul>
+</div>
+
+<!-- ══════════════════════════════════════════ TEMPLATE 1 ══ -->
+<div class="template-page">
+  <div class="section-label">Template 1 of 5</div>
+  <div class="template-header">
+    <div class="template-number">1</div>
+    <div class="template-title-block">
+      <div class="template-title">30-Second Social Ad</div>
+      <div class="template-meta">
+        <span class="meta-pill purple">TikTok · Reels · YouTube Shorts</span>
+        <span class="meta-pill green">25–35 seconds</span>
+        <span class="meta-pill">Best for: Promoting a product or service</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="framework">
+    <div class="framework-header">Script Framework — Fill in the brackets</div>
+    <div class="framework-body">
+      <div class="beat">
+        <div class="beat-label">Hook (0–3s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"Are you still [doing painful thing the old way]?"</div>
+          <div class="beat-note">Use a behaviour your audience recognises immediately. Make it slightly uncomfortable.</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">Problem (3–10s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"Most [target audience] spend [X hours/£X] every [week/month] on [pain point] — and the results still look generic."</div>
+          <div class="beat-note">Name the cost: time or money. UK professionals respond to both.</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">Solution (10–22s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"[Product name] lets you [key benefit] in [timeframe]. [One differentiating feature]. [Second differentiating feature]."</div>
+          <div class="beat-note">Three beats max. Lead with the outcome, not the feature.</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">Proof (22–28s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"[Number]+ [customers/businesses/agencies] are already using it to [result]."</div>
+          <div class="beat-note">Use a real number. Vague claims lose UK audiences fast.</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">CTA (28–33s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"[Link in bio / Visit [url]] to start free — no credit card needed."</div>
+          <div class="beat-note">Low-friction CTA. Remove every possible barrier.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="example">
+    <div class="example-label">Example — Filled In (Marketing Agency)</div>
+    <div class="example-line"><span class="example-beat">Hook</span><span class="example-text">"Are you still spending your Sunday evenings editing client videos in Premiere Pro?"</span></div>
+    <div class="example-line"><span class="example-beat">Problem</span><span class="example-text">"Most UK agencies spend 8–12 hours per video, and clients still complain it looks stock."</span></div>
+    <div class="example-line"><span class="example-beat">Solution</span><span class="example-text">"Zebracat generates a fully unique, client-ready video from your script in under 2 minutes. No stock footage. British voiceovers. Brand kit built in."</span></div>
+    <div class="example-line"><span class="example-beat">Proof</span><span class="example-text">"50,000+ creators and agencies are already using it to scale their output."</span></div>
+    <div class="example-line"><span class="example-beat">CTA</span><span class="example-text">"Link in bio — start free today."</span></div>
+  </div>
+
+  <div class="zc-tip">
+    <img class="zc-tip-logo" src="https://s3-us-west-2.amazonaws.com/public.notion-static.com/15b41480-847b-498b-85a7-eaafea57c127/Logo_2.svg" alt="Zebracat">
+    <p class="zc-tip-text"><strong>Zebracat tip:</strong> Use "Cinematic Short" or "Fast-Paced Social" style for 30-second ads. Select a British English voiceover and choose "Auto Scene Split" — Zebracat will cut between unique AI-generated scenes to match each beat of the script automatically.</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ TEMPLATE 2 ══ -->
+<div class="template-page">
+  <div class="section-label">Template 2 of 5</div>
+  <div class="template-header">
+    <div class="template-number">2</div>
+    <div class="template-title-block">
+      <div class="template-title">Client Case Study Video</div>
+      <div class="template-meta">
+        <span class="meta-pill purple">LinkedIn · YouTube · Website</span>
+        <span class="meta-pill green">60–90 seconds</span>
+        <span class="meta-pill">Best for: Agencies &amp; freelancers showing results</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="framework">
+    <div class="framework-header">Script Framework — Fill in the brackets</div>
+    <div class="framework-body">
+      <div class="beat">
+        <div class="beat-label">Client Intro (0–8s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"[Client type/industry] came to us with a problem: [specific challenge they faced]."</div>
+          <div class="beat-note">Name the industry, not the client if confidential. Specific beats generic every time.</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">The Stakes (8–18s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"They were [wasting X time/spending £X] with [old approach], and [negative outcome] was starting to hurt [metric]."</div>
+          <div class="beat-note">Make the consequence real. Money lost or time wasted are most relatable.</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">Our Approach (18–45s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"We introduced [solution/tool/process]. [Step 1]. [Step 2]. [Step 3]. The whole workflow now takes [new timeframe]."</div>
+          <div class="beat-note">Three steps max. Brevity signals competence.</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">The Result (45–65s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"[Client] went from [before metric] to [after metric] in [timeframe]. That's [X% improvement / £X saved]."</div>
+          <div class="beat-note">Numbers close deals. If you don't have exact figures, use ranges.</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">CTA (65–75s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"If you're facing the same challenge, [visit / DM / book a call at url] — we'll show you how we'd apply the same approach to your business."</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="example">
+    <div class="example-label">Example — Filled In (Video Production Agency)</div>
+    <div class="example-line"><span class="example-beat">Client</span><span class="example-text">"A UK e-commerce brand came to us needing 20 product videos per month — with a £500 production budget."</span></div>
+    <div class="example-line"><span class="example-beat">Stakes</span><span class="example-text">"Traditional filming would have cost them £3,000 per video. They were falling behind competitors on social, and ad performance was dropping."</span></div>
+    <div class="example-line"><span class="example-beat">Approach</span><span class="example-text">"We built a Zebracat-powered workflow: script in 10 minutes, AI video in 2, brand kit applied automatically. 20 videos delivered in 3 days."</span></div>
+    <div class="example-line"><span class="example-beat">Result</span><span class="example-text">"Cost per video dropped from £3,000 to £18. ROAS on their ad campaigns improved by 34% within 6 weeks."</span></div>
+    <div class="example-line"><span class="example-beat">CTA</span><span class="example-text">"Book a free 15-minute workflow audit at our website — link in bio."</span></div>
+  </div>
+
+  <div class="zc-tip">
+    <img class="zc-tip-logo" src="https://s3-us-west-2.amazonaws.com/public.notion-static.com/15b41480-847b-498b-85a7-eaafea57c127/Logo_2.svg" alt="Zebracat">
+    <p class="zc-tip-text"><strong>Zebracat tip:</strong> For case study videos, use "Corporate Clean" or "Documentary" style. Upload your client's brand colours into Zebracat's Brand Kit before generating — the AI will apply them to every scene. Use the avatar feature if you want a professional talking-head segment without filming.</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ TEMPLATE 3 ══ -->
+<div class="template-page">
+  <div class="section-label">Template 3 of 5</div>
+  <div class="template-header">
+    <div class="template-number">3</div>
+    <div class="template-title-block">
+      <div class="template-title">Lead Generation Video Ad</div>
+      <div class="template-meta">
+        <span class="meta-pill purple">LinkedIn Ads · Meta Ads · YouTube Pre-Roll</span>
+        <span class="meta-pill green">45–60 seconds</span>
+        <span class="meta-pill">Best for: Driving sign-ups, calls, or downloads</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="framework">
+    <div class="framework-header">Script Framework — Fill in the brackets</div>
+    <div class="framework-body">
+      <div class="beat">
+        <div class="beat-label">Pattern Break (0–5s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"[Surprising statistic or counterintuitive statement about your industry]."</div>
+          <div class="beat-note">Lead with data or a provocation. Avoid "Hi, I'm…" — you lose 70% of viewers in the first 3 seconds.</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">Qualify (5–15s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"If you're a [specific role] at a [company type] in [location/sector], and you're dealing with [problem]..."</div>
+          <div class="beat-note">Narrow the audience. The right person should feel directly addressed.</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">Promise (15–30s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"We've helped [X companies/clients] achieve [specific outcome] without [common objection or painful trade-off]."</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">Mechanism (30–48s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"Here's how it works: [Step 1], [Step 2], [Step 3]. Most clients see [early result] within [timeframe]."</div>
+          <div class="beat-note">Name your process. A named process signals expertise and reduces perceived risk.</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">CTA (48–58s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"Click below to [download / book / start] — it takes less than [2 minutes / 30 seconds]. [URL]"</div>
+          <div class="beat-note">Give a time estimate. It reduces drop-off on the landing page significantly.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="example">
+    <div class="example-label">Example — Filled In (SaaS / AI Tool)</div>
+    <div class="example-line"><span class="example-beat">Pattern Break</span><span class="example-text">"The average UK marketing team spends 14 hours a week creating video content. And most of it gets 200 views."</span></div>
+    <div class="example-line"><span class="example-beat">Qualify</span><span class="example-text">"If you're a marketing manager or agency owner spending real budget on video that isn't converting..."</span></div>
+    <div class="example-line"><span class="example-beat">Promise</span><span class="example-text">"We've helped 50,000+ creators produce scroll-stopping video content without hiring an editor or touching editing software."</span></div>
+    <div class="example-line"><span class="example-beat">Mechanism</span><span class="example-text">"Paste your script. Choose a style. Zebracat generates unique AI visuals and a British voiceover in under 2 minutes. Export in any format."</span></div>
+    <div class="example-line"><span class="example-beat">CTA</span><span class="example-text">"Click below to start free — no credit card, no editing skills required. Takes 90 seconds to set up."</span></div>
+  </div>
+
+  <div class="zc-tip">
+    <img class="zc-tip-logo" src="https://s3-us-west-2.amazonaws.com/public.notion-static.com/15b41480-847b-498b-85a7-eaafea57c127/Logo_2.svg" alt="Zebracat">
+    <p class="zc-tip-text"><strong>Zebracat tip:</strong> For lead gen ads, generate 3 versions of the same script with different visual styles (e.g. Cinematic, Motion Graphics, Real-Footage blend) and A/B test them. Zebracat's True Generative AI means each version is visually distinct — no stock overlap between variants.</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ TEMPLATE 4 ══ -->
+<div class="template-page">
+  <div class="section-label">Template 4 of 5</div>
+  <div class="template-header">
+    <div class="template-number">4</div>
+    <div class="template-title-block">
+      <div class="template-title">LinkedIn Thought Leadership Video</div>
+      <div class="template-meta">
+        <span class="meta-pill purple">LinkedIn Feed · LinkedIn Newsletter</span>
+        <span class="meta-pill green">60–90 seconds</span>
+        <span class="meta-pill">Best for: Building authority, attracting inbound leads</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="framework">
+    <div class="framework-header">Script Framework — Fill in the brackets</div>
+    <div class="framework-body">
+      <div class="beat">
+        <div class="beat-label">Controversy (0–6s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"[Common belief in your industry] is wrong. Here's what's actually happening."</div>
+          <div class="beat-note">Take a position. Neutral content gets ignored on LinkedIn. Safe opinions generate no engagement.</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">The Reality (6–25s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"Most [professionals in your field] are still [doing outdated approach] because [reason]. But in the past [12 months / 2 years], [shift that changed everything]."</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">The Insight (25–55s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"What the best [job title / company type] are doing instead: [Point 1]. [Point 2]. [Point 3]. The result? [Measurable or observable outcome]."</div>
+          <div class="beat-note">Three points is the LinkedIn sweet spot. Each should be one sentence.</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">Takeaway (55–75s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"The single most important thing you can do this week: [specific, actionable step]."</div>
+          <div class="beat-note">Make it implementable in under an hour. That's what gets saved and shared.</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">Soft CTA (75–85s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"I post [topic] content every [frequency]. Follow me for more — or drop a comment if you're seeing the same thing."</div>
+          <div class="beat-note">Ask for engagement, not a sale. The conversion happens in the DMs.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="example">
+    <div class="example-label">Example — Filled In (Content Strategist / Agency Owner)</div>
+    <div class="example-line"><span class="example-beat">Controversy</span><span class="example-text">"The 'post consistently' advice is killing UK freelancers. Here's what's actually working."</span></div>
+    <div class="example-line"><span class="example-beat">Reality</span><span class="example-text">"Most freelancers are grinding out 5 posts a week with no strategy, burning out, and wondering why their pipeline is dry."</span></div>
+    <div class="example-line"><span class="example-beat">Insight</span><span class="example-text">"The highest-earning freelancers I know post 2x per week. But every post has a hook that targets a specific pain point, a story that proves expertise, and a low-friction CTA. Volume means nothing without relevance."</span></div>
+    <div class="example-line"><span class="example-beat">Takeaway</span><span class="example-text">"This week: pick your three best client results, turn each one into a 60-second video script, and generate all three in Zebracat in under 30 minutes."</span></div>
+    <div class="example-line"><span class="example-beat">Soft CTA</span><span class="example-text">"Follow me for weekly content strategy breakdowns — or comment 'SCRIPTS' and I'll send you the framework I use."</span></div>
+  </div>
+
+  <div class="zc-tip">
+    <img class="zc-tip-logo" src="https://s3-us-west-2.amazonaws.com/public.notion-static.com/15b41480-847b-498b-85a7-eaafea57c127/Logo_2.svg" alt="Zebracat">
+    <p class="zc-tip-text"><strong>Zebracat tip:</strong> For LinkedIn, choose the 1:1 square format or 4:5 portrait — they take up more screen space in the feed. Use a professional avatar voice with a British accent. Generate a custom thumbnail with your key stat overlaid — LinkedIn auto-plays but viewers click for context.</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ TEMPLATE 5 ══ -->
+<div class="template-page">
+  <div class="section-label">Template 5 of 5</div>
+  <div class="template-header">
+    <div class="template-number">5</div>
+    <div class="template-title-block">
+      <div class="template-title">Tutorial / How-It-Works Video</div>
+      <div class="template-meta">
+        <span class="meta-pill purple">YouTube · Website · Email</span>
+        <span class="meta-pill green">90–120 seconds</span>
+        <span class="meta-pill">Best for: Reducing objections, onboarding, SEO</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="framework">
+    <div class="framework-header">Script Framework — Fill in the brackets</div>
+    <div class="framework-body">
+      <div class="beat">
+        <div class="beat-label">Problem Hook (0–8s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"If you've ever tried to [do difficult thing] and ended up [frustrating outcome], this is for you."</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">Promise (8–15s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"In the next [X minutes], I'll show you exactly how to [desired outcome] — even if [common objection or barrier]."</div>
+          <div class="beat-note">Name the objection before they think it. Eliminates resistance upfront.</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">Step 1 (15–40s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"First, [action]. [What you see / what happens]. This is important because [reason it matters]."</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">Step 2 (40–70s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"Next, [action]. Most people skip this step — don't. [Common mistake and why it fails]. Instead, [correct approach]."</div>
+          <div class="beat-note">The "most people skip this" hook increases retention significantly.</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">Step 3 (70–95s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"Finally, [action]. In [timeframe], you'll have [specific deliverable]. Here's what the result looks like: [describe output]."</div>
+        </div>
+      </div>
+      <div class="beat">
+        <div class="beat-label">CTA (95–110s)</div>
+        <div class="beat-content">
+          <div class="beat-template">"Try it yourself at [url] — it's free to start. If you found this useful, [subscribe / follow / share] for more."</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="example">
+    <div class="example-label">Example — Filled In (Zebracat Tutorial / Affiliate Content)</div>
+    <div class="example-line"><span class="example-beat">Hook</span><span class="example-text">"If you've ever spent 3 hours editing a video and ended up with something that looks like stock footage from 2014 — this is for you."</span></div>
+    <div class="example-line"><span class="example-beat">Promise</span><span class="example-text">"In the next 90 seconds, I'll show you how to generate a fully unique, professional video from a text script — even if you've never used AI tools before."</span></div>
+    <div class="example-line"><span class="example-beat">Step 1</span><span class="example-text">"First, paste your script into Zebracat's text field. You'll see it automatically split into scenes. This is important — each scene generates its own unique AI visual."</span></div>
+    <div class="example-line"><span class="example-beat">Step 2</span><span class="example-text">"Next, choose your style and voice. Most people skip the voiceover selection — don't. Choose a UK-native British accent. It makes a significant difference to how the video lands with UK audiences."</span></div>
+    <div class="example-line"><span class="example-beat">Step 3</span><span class="example-text">"Finally, hit generate. In about 2 minutes, you have a complete video with unique AI visuals, professional voiceover, and your brand colours applied."</span></div>
+    <div class="example-line"><span class="example-beat">CTA</span><span class="example-text">"Try it free at zebracat.ai — link below. No credit card, no editing software, no prior experience needed."</span></div>
+  </div>
+
+  <div class="zc-tip">
+    <img class="zc-tip-logo" src="https://s3-us-west-2.amazonaws.com/public.notion-static.com/15b41480-847b-498b-85a7-eaafea57c127/Logo_2.svg" alt="Zebracat">
+    <p class="zc-tip-text"><strong>Zebracat tip:</strong> Tutorial videos work well as "blog to video" repurposes. If you have a written how-to guide, paste the URL directly into Zebracat's URL-to-video feature — it extracts the key steps and builds the script automatically. Use the 16:9 format for YouTube SEO and embed on your website.</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ FINAL CTA ══ -->
+<div class="cta-page">
+  <img src="https://s3-us-west-2.amazonaws.com/public.notion-static.com/15b41480-847b-498b-85a7-eaafea57c127/Logo_2.svg" alt="Zebracat">
+  <h2>Ready to generate your first video?</h2>
+  <p>Start free on Zebracat — no credit card, no editing skills, no stock footage.</p>
+
+  <div class="cta-code">
+    <p>Exclusive discount for AIVideoToolReview readers</p>
+    <span>REVIEW15</span>
+  </div>
+
+  <p class="cta-url">http://studio.zebracat.ai/signup/?via=aivideo-review</p>
+  <p style="color:rgba(255,255,255,0.4);font-size:12px;margin-top:12px;">15% off your first 6 months on any plan</p>
+
+  <div class="cta-footer">
+    © 2026 AIVideoToolReview.com · This document contains affiliate links · <a href="https://www.aivideotoolreview.com/privacy.html" style="color:inherit;">Privacy Policy</a>
+  </div>
+</div>
+
+</body>
+</html>
