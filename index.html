@@ -839,6 +839,21 @@
       </p>
     </div>
   </footer>
-  <!-- TRACKING JS — Task 11 -->
+  <!-- CONVERSION TRACKING -->
+  <!-- Replace AW-XXXXXXXXX/XXXXXXXXXXXX with real Google Ads tag after ads setup -->
+  <script>
+    function trackClick(location) {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'affiliate_click', {
+          'event_category': 'conversion',
+          'event_label': location,
+          'value': 1
+        });
+        gtag('event', 'conversion', {
+          'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXX'
+        });
+      }
+    }
+  </script>
 </body>
 </html>
