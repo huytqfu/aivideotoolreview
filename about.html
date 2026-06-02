@@ -1,41 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <title>About — AIVideoToolReview.com</title>
   <meta name="description" content="Independent reviews of AI SaaS tools — written by a working performance marketer, not a sponsored content team.">
+  <link rel="canonical" href="https://www.aivideotoolreview.com/about.html">
+  <meta name="robots" content="index, follow">
+
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', system-ui, sans-serif; }
+  </style>
+
+  <!-- Google Analytics 4 (Reusing from index.html) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R294586ZWT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R294586ZWT');
+  </script>
 </head>
-<body class="bg-white text-gray-800 font-sans max-w-2xl mx-auto px-6 py-12">
-  <a href="index.html" class="text-blue-600 text-sm hover:underline">&larr; Back to Review</a>
-  <h1 class="text-2xl font-bold mt-6 mb-4">About AIVideoToolReview</h1>
-  <p class="text-sm text-gray-500 mb-8">Last updated: May 2026</p>
+<body class="bg-white text-gray-900 font-sans">
+  <!-- NAV -->
+  <nav aria-label="Main navigation" class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="text-base font-bold text-gray-900">AIVideoToolReview<span class="text-blue-600">.com</span></a>
+      <div class="hidden md:flex gap-6 text-sm text-gray-600">
+        <a href="index.html#comparison" class="hover:text-blue-600 transition">Comparison</a>
+        <a href="index.html#use-cases" class="hover:text-blue-600 transition">Who It's For</a>
+        <a href="index.html#reviews" class="hover:text-blue-600 transition">Reviews</a>
+        <a href="sendible-review.html" class="hover:text-blue-600 transition font-medium">Sendible Review</a>
+        <a href="index.html#faq" class="hover:text-blue-600 transition">FAQ</a>
+        <a href="about.html" class="text-blue-600 font-semibold transition">About</a>
+      </div>
+      <a href="http://studio.zebracat.ai/signup/?via=aivideo-review"
+         target="_blank" rel="noopener sponsored"
+         class="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+        Try Zebracat Free →
+      </a>
+    </div>
+  </nav>
 
-  <h2 class="font-semibold text-lg mb-2">What this site is</h2>
-  <p class="text-sm text-gray-700 mb-6">AIVideoToolReview is an independent review site covering AI SaaS tools — primarily AI video generation, marketing automation, and developer tooling. Every review on this site is based on hands-on testing of the actual product, not press releases or feature lists copied from vendor sites.</p>
+  <main class="py-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">About AIVideoToolReview</h1>
+      <p class="text-sm text-gray-500 mb-12">Last updated: May 2026</p>
 
-  <h2 class="font-semibold text-lg mb-2">Who runs it</h2>
-  <p class="text-sm text-gray-700 mb-6">The site is operated by <strong>Huy Tran</strong>, a senior performance marketer with 12+ years in digital marketing in Vietnam — previously at VNG (Vietnam's largest tech &amp; gaming company) and an AI recruitment startup, currently leading paid acquisition at a fintech firm managing 7-figure monthly ad budgets. AIVideoToolReview is an independent side project — there is no editorial team, no sponsored content desk, and no third-party investors.</p>
+      <div class="prose prose-blue max-w-none text-gray-700 space-y-8">
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">What this site is</h2>
+          <p class="leading-relaxed text-lg">AIVideoToolReview is an independent review site covering AI SaaS tools — primarily AI video generation, marketing automation, and developer tooling. Every review on this site is based on hands-on testing of the actual product, not press releases or feature lists copied from vendor sites.</p>
+        </section>
 
-  <h2 class="font-semibold text-lg mb-2">How reviews are written</h2>
-  <p class="text-sm text-gray-700 mb-6">Each tool is tested through its real signup flow with a fresh email and credit card (where required). We score on four dimensions: ease of use, output quality, pricing fairness, and value for SMB buyers. We do not accept payment in exchange for higher rankings or favorable wording — vendors have no input on how their product is reviewed.</p>
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Who runs it</h2>
+          <p class="leading-relaxed">The site is operated by <strong>Huy Tran</strong>, a senior performance marketer with 12+ years in digital marketing in Vietnam — previously at VNG (Vietnam's largest tech &amp; gaming company) and an AI recruitment startup, currently leading paid acquisition at a fintech firm managing 7-figure monthly ad budgets. AIVideoToolReview is an independent side project — there is no editorial team, no sponsored content desk, and no third-party investors.</p>
+        </section>
 
-  <h2 class="font-semibold text-lg mb-2">Affiliate disclosure</h2>
-  <p class="text-sm text-gray-700 mb-6">This site contains affiliate links. When you click through to a tool and subscribe, we may earn a commission at no additional cost to you. Affiliate relationships do not influence which products are featured or how they are ranked. We disclose affiliate links inline and in our <a href="privacy.html" class="text-blue-600 hover:underline">Privacy Policy</a>. If a tool fails our independent testing, we say so — even if it pays the highest commission.</p>
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">How reviews are written</h2>
+          <p class="leading-relaxed">Each tool is tested through its real signup flow with a fresh email and credit card (where required). We score on four dimensions: ease of use, output quality, pricing fairness, and value for SMB buyers. We do not accept payment in exchange for higher rankings or favorable wording — vendors have no input on how their product is reviewed.</p>
+        </section>
 
-  <h2 class="font-semibold text-lg mb-2">What we do not do</h2>
-  <ul class="text-sm text-gray-700 mb-6 list-disc pl-6 space-y-1">
-    <li>We do not publish sponsored articles or paid placements.</li>
-    <li>We do not sell user data — see <a href="privacy.html" class="text-blue-600 hover:underline">Privacy Policy</a>.</li>
-    <li>We do not promote tools we have not personally tested.</li>
-    <li>We do not bid on branded keywords of the tools we review (per most affiliate program terms).</li>
-  </ul>
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Affiliate disclosure</h2>
+          <p class="leading-relaxed">This site contains affiliate links. When you click through to a tool and subscribe, we may earn a commission at no additional cost to you. Affiliate relationships do not influence which products are featured or how they are ranked. We disclose affiliate links inline and in our <a href="privacy.html" class="text-blue-600 hover:underline">Privacy Policy</a>. If a tool fails our independent testing, we say so — even if it pays the highest commission.</p>
+        </section>
 
-  <h2 class="font-semibold text-lg mb-2">Contact</h2>
-  <p class="text-sm text-gray-700">General inquiries and program manager outreach: <strong>hello@aivideotoolreview.com</strong></p>
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">What we do not do</h2>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>We do not publish sponsored articles or paid placements.</li>
+            <li>We do not sell user data — see <a href="privacy.html" class="text-blue-600 hover:underline">Privacy Policy</a>.</li>
+            <li>We do not promote tools we have not personally tested.</li>
+            <li>We do not bid on branded keywords of the tools we review (per most affiliate program terms).</li>
+          </ul>
+        </section>
 
-  <p class="text-xs text-gray-400 mt-12 border-t pt-4">&copy; 2026 AIVideoToolReview.com</p>
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Contact</h2>
+          <p class="leading-relaxed">General inquiries and program manager outreach: <strong>hello@aivideotoolreview.com</strong></p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-gray-400 py-10 px-4" style="background:#0c0c14">
+    <div class="max-w-4xl mx-auto">
+
+      <!-- Affiliate disclosure -->
+      <div id="disclosure" class="bg-gray-800 border border-gray-700 rounded-lg p-4 mb-8 text-xs leading-relaxed">
+        <p class="font-semibold text-gray-300 mb-1">Affiliate Disclosure</p>
+        <p>AIVideoToolReview.com is reader-supported. This page contains affiliate links — if you sign up for tools through our links, we may earn a commission at no extra cost to you. This does not influence our ratings or editorial opinions. We only recommend tools we have independently evaluated.</p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+        <div>
+          <p class="text-white font-bold text-sm">AIVideoToolReview<span class="text-blue-400">.com</span></p>
+          <p class="text-xs mt-1">Independent reviews of marketing & AI tools for professionals</p>
+        </div>
+        <nav aria-label="Footer navigation" class="flex gap-4 text-xs">
+          <a href="index.html" class="hover:text-white transition">Home</a>
+          <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+          <a href="about.html" class="hover:text-white transition">About</a>
+        </nav>
+      </div>
+
+      <p class="text-xs text-center border-t border-gray-700 pt-5">
+        &copy; 2026 AIVideoToolReview.com &middot; All rights reserved.
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
