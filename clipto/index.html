@@ -419,7 +419,7 @@
                 </div>
                 <div class="output-box">
                     <div class="output-line">You're losing: <span class="output-highlight" id="monthly-loss">$0</span>/month to manual transcription</div>
-                    <div class="output-line">Clipto costs: <span class="output-highlight">~$19</span>/month</div>
+                    <div class="output-line">Clipto costs: <span class="output-highlight">$24.99</span>/month</div>
                     <div class="output-line">You save: <span class="output-highlight" id="monthly-savings">$0</span>/month — paid back in <span class="output-highlight" id="payback-days">0</span> days</div>
                 </div>
                 <div style="text-align: center;">
@@ -446,7 +446,7 @@
                 <tbody>
                     <tr>
                         <td>Price/month</td>
-                        <td class="col-highlight col-clipto">~$19</td>
+                        <td class="col-highlight col-clipto">$24.99</td>
                         <td>$16.99</td>
                         <td>$14.99+/hr</td>
                         <td>$24</td>
@@ -530,9 +530,9 @@
             hoursVal.textContent = hours;
 
             const monthly_cost = hours * 4.33 * rate;
-            const savings = monthly_cost - 19;
+            const savings = monthly_cost - 24.99;
             const daily_loss = monthly_cost / 30;
-            const payback = daily_loss > 0 ? Math.round(19 / (monthly_cost / 30)) : 0;
+            const payback = daily_loss > 0 ? Math.round(24.99 / (monthly_cost / 30)) : 0;
 
             monthlyLoss.textContent = '$' + Math.round(monthly_cost);
             monthlySavings.textContent = '$' + Math.max(0, Math.round(savings));
